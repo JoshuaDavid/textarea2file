@@ -1,0 +1,15 @@
+{
+    "name": "textarea2file",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "app": {
+        "background": {
+            "scripts": ["popup.js"]
+        }
+    },
+    "icons": {"128": "icon.png"},
+    "permissions": [ 
+        {"fileSystem": ["write", "retainEntries", "directory"]} 
+    ],
+    "externally_connectable": { "ids": ["*"], "matches": ["http://localhost/*"] }
+}
